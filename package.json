@@ -1,0 +1,23 @@
+{
+  "name": "hw9-proreadme-jd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuzhu930/hw9-ProREADME-JD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuzhu930/hw9-ProREADME-JD/issues"
+  },
+  "homepage": "https://github.com/zhuzhu930/hw9-ProREADME-JD#readme",
+  "dependencies": {
+    "inquirer": "^8.2.3"
+  }
+}

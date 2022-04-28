@@ -5,9 +5,35 @@ const fs = require("fs");
 inquirer.prompt([
     {
         type: "input",
+        name: "projectTitle",
+        message: "What is your project title?",
+    },
+    {
+        type: "input",
         name: "name",
         message: "What is your name?",
     },
+    {
+        type: "input",
+        name: "motivation",
+        message: "What was your motivation to build this app?",
+    },
+    {
+        type: "input",
+        name: "purpose",
+        message: "Why did you build this project?",
+    },
+    {
+        type: "input",
+        name: "problem-solved",
+        message: "What problem does it solve?",
+    },
+    {
+        type: "input",
+        name: "things-learned",
+        message: "What did you learn?",
+    },
+    //Stop in here. 
     {
         type: "input",
         message: "Where are you from?",

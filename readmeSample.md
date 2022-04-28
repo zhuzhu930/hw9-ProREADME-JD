@@ -1,10 +1,10 @@
 <!--Inquire: Project Title-->
 
-# <Your-Project-Title>
+# ${data.projectTitle}
 
 <!--Inquire: Name of Deisgner-->
 
-Designed by: <Name-Of-Designer>
+Designed by: ${data.name}
 
 ## Description
 
@@ -14,13 +14,13 @@ Designed by: <Name-Of-Designer>
 <!-- Inquire: questions about the app-->
 
 - What was your motivation?
-- Answer: <motivation>
+- Answer: ${motivation}
 - Why did you build this project?
-- Answer: <purpose>
+- Answer: ${purpose}
 - What problem does it solve?
-- Answer: <problem-solved>
+- Answer: ${problem-solved}
 - What did you learn?
-- Answer: <things-learned>
+- Answer: ${things-learned}
 
 ## Installation
 

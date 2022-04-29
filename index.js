@@ -3,6 +3,7 @@ const fs = require("fs");
 
 //app design, using .prompt to prompt questions to users. .prompt takes an array, but inside the array, use objects. 
 inquirer.prompt([
+    //Description queries: 
     {
         type: "input",
         name: "projectTitle",
@@ -33,40 +34,86 @@ inquirer.prompt([
         name: "things-learned",
         message: "What did you learn?",
     },
-    //Stop in here. 
+    //Installation queries: 
     {
         type: "input",
-        message: "Where are you from?",
-        name: "location",
-    },
-    {
-        type: "input",
-        message: "Can you give us a short bio?",
-        name: "bio",
+        message: "Please tell us the 3 simple steps for installing your app? Step 1 is...",
+        name: "step1",
     },
     {
         type: "input",
-        message: "What's your LinkedIn URL?",
-        name: "LinkedIn",
+        message: "Step 2 is...?",
+        name: "step2",
     },
     {
         type: "input",
-        message: "What's your GitHub URL?",
-        name: "GitHub",
+        message: "Step 3 is...?",
+        name: "step3",
+    },
+    //Usage queries: 
+    {
+        type: "input",
+        message: "Could you briefly describe how to use this app?",
+        name: "usageDescription",
+    },
+    //Credits queries: 
+    //collaborators: 
+    {
+        type: "input",
+        message: "Do you have any collaborators? If you do, please list his/her name.",
+        name: "collaboratorName1",
     },
     {
-        type: "checkbox",
-        message: "What skills do you have in web development?",
-        name: "skills",
-        choices: ["HTML", "CSS", "JavaScript", "Node.js", "React"]
+        type: "input",
+        message: "What's this collaborator's GitHub profile?",
+        name: "GitHubProfile1",
     },
     {
-        type: "checkbox",
-        message: "What hobbies do you have?",
-        name: "hobbies",
-        choices: ["oil painting", "watercolor painting", "cooking", "hiking", "reading"]
+        type: "input",
+        message: "Do you have another collaborator? If you do, please list his/her name.",
+        name: "collaboratorName2",
     },
-]).then((data) => { // this is a promise. 
+    {
+        type: "input",
+        message: "What's this collaborator's GitHub profile?",
+        name: "GitHubProfile2",
+    },
+    // Third party assets: 
+    {
+        type: "input",
+        message: "Did you use any third party assets? If you do, please list the URLs.",
+        name: "thirdpartyURLs",
+    },
+    // Tutorials: 
+    {
+        type: "input",
+        message: "Did you watch any tutorials? If you do, please list the URLs.",
+        name: "tutorialURLs",
+    },
+    // License queries: 
+    {
+        type: "input",
+        message: "In what year did you design this app?",
+        name: "licenseYear",
+    },
+    {
+        type: "input",
+        message: "What is your full name?",
+        name: "licenseName",
+    },
+    // Feature queries: 
+    {
+        type: "input",
+        message: "Can you give us a short description of the features?",
+        name: "features",
+    },
+    // Contribution queries: 
+    {
+        type: "input",
+        message: "Can you tell us how to contribute to this app?",
+        name: "contribution",
+    }],
+    ).then((data) => { // this is a promise. 
     //console.log(data);
     const filenameHTML = `${data.name.toLowerCase()}.html`;
     const filenameCSS = "style.css";

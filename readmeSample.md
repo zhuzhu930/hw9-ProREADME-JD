@@ -28,29 +28,42 @@ Designed by: ${data.name}
 
 Please tell us the 3 simple steps for installing your app.
 
-- Step 1: <step1>
-- Step 2: <step2>
-- Step 3: <step3>
+- Step 1: <${step1}>
+- Step 2: <${step2}>
+- Step 3: <${step3}>
 
 ## Usage
 
 <!-- Inquire: short description on how to use-->
-<short-description>
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+- ${usageDescription}
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+- Screenshots of the App
+
+  ```md
+  ![alt text](assets/images/screenshot.png)
+  ```
 
 ## Credits
 
-- Collaborators:
+Collaborators:
+
 <!-- Inquire: collaborators and their GitHub profiles-->
-- Third-party assets:
+
+- Name: ${collaboratorName1}; GitHub Repo: ${GitHubProfile1}.
+- Name: ${collaboratorName2}; GitHub Repo: ${GitHubProfile2}.
+
 <!-- Inquire: third-party assets and their websites-->
-- Tutorials:
+
+Third-party assets:
+
+- ${thirdpartyURLs}
+
 <!-- Inquire: tutorials and links-->
+
+Tutorials:
+
+- ${tutorialURLs}
 
 ## License
 
@@ -58,7 +71,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) ${licenseYear} ${licenseName}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -80,7 +93,7 @@ SOFTWARE.
 
 ---
 
-## 🏆 Misellaneous
+## 🏆 Miscellaneous
 
 ## Badges
 
@@ -90,14 +103,20 @@ SOFTWARE.
 
 <!-- Inquire: features of the app-->
 
-<short-descrioption-of-features>
+- ${features}
 
 ## How to Contribute
 
 <!-- Inquire: short description on how to contribute-->
 
+- ${contribution}
+
 If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Demo URL
 
-<!--Inquire: demo link on Google Drive-->
+Please feel free to take a look at the demo video of this app:
+
+<!--demo link on Google Drive-->
+
+[Demo link](https://#)

@@ -17,9 +17,9 @@ ${data.shortDescription}
 - Why did you build this project?
 - Answer: ${data.purpose}
 - What problem does it solve?
-- Answer: ${data.problem-solved}
+- Answer: ${data.problemSolved}
 - What did you learn?
-- Answer: ${data.things-learned}
+- Answer: ${data.thingsLearned}
 
 ## Installation
 

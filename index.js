@@ -31,12 +31,12 @@ inquirer.prompt([
     },
     {
         type: "input",
-        name: "problem-solved",
+        name: "problemSolved",
         message: "What problem does it solve?",
     },
     {
         type: "input",
-        name: "things-learned",
+        name: "thingsLearned",
         message: "What did you learn?",
     },
     //Installation queries: 
@@ -135,9 +135,9 @@ inquirer.prompt([
     - Why did you build this project?
     - Answer: ${data.purpose}
     - What problem does it solve?
-    - Answer: ${data.problem-solved}
+    - Answer: ${data.problemSolved}
     - What did you learn?
-    - Answer: ${data.things-learned}
+    - Answer: ${data.thingsLearned}
     
     ## Installation
     

@@ -223,7 +223,7 @@ inquirer.prompt([
     
     Please feel free to take a look at the demo video of this app:
     
-    [Demo link](https://#)
+    [Demo link](https://drive.google.com/file/d/1PMw6HrfYfTd0uDhtfg4vlzsGgRSwDm-5/view)
     `
 
     fs.writeFile(filenameReadme, readmeGenerate, (err) => 

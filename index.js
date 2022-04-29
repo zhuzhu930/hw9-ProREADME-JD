@@ -118,65 +118,115 @@ inquirer.prompt([
         message: "Can you tell us how to contribute to this app?",
         name: "contribution",
     }],
-    ).then((data) => { // this is a promise. 
-    //console.log(data);
-    const filenameHTML = `${data.name.toLowerCase()}.html`;
-    const filenameCSS = "style.css";
-    const filenameReadme = "readme-generated.md"
+    ).then((data) => {
+    const filenameReadme = `${data.projectTitle.toLowerCase()}-readme.md`;
 
-    // const html = `<!DOCTYPE html>
-    //     <html lang="en">
-    //     <head>
-    //         <meta charset="UTF-8">
-    //         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    //         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    //         <link rel="stylesheet" href="style.css"/>
-    //         <title>Document</title>
-    //     </head>
-    //     <body>
-    //         <h1>Hi my name is ${data.name}.</h1>
-    //         <p>I live in ${data.location}.</p>
-    //         <p>This is my short bio:</p>
-    //         <p>${data.bio}</p>
-    //         <ul>
-    //             <li>LinkedIn URL: <a>${data.LinkedIn}</a></li>
-    //             <li>GitHub URL: <a>${data.GitHub}</a></li>
-    //         </ul>
-    //         <p>My skills in web development include: ${data.skills}.</p>
-    //         <p>My hobbies include: ${data.hobbies}.</p>
-    //     </body>
-    //     </html>`
-
-    // const css = `
-    //     * {
-    //         box-sizing: border-box;
-    //     }
-        
-    //     body {
-    //         margin: 0;
-    //         padding: 0;
-    //         font-family: Verdana, Geneva, Tahoma, sans-serif;
-    //         background: darkgrey;
-    //         text-align: center;
-    //         color: white;
-    //     }
-
-    //     h1 {
-    //         font-family: Cursive;
-    //     }
-        
-    //     a {
-    //         text-decoration: none;
-    //         color: darkblue;
-    //       }
-    //     a:hover {
-    //         color: #6633ff;
-    //       }
+    const readmeGenerate = `
+    # ${data.projectTitle}
+    
+    Designed by: ${data.name}
+    
+    ## Description
+    
+    ${data.shortDescription}
+    
+    - What was your motivation?
+    - Answer: ${data.motivation}
+    - Why did you build this project?
+    - Answer: ${data.purpose}
+    - What problem does it solve?
+    - Answer: ${data.problem-solved}
+    - What did you learn?
+    - Answer: ${data.things-learned}
+    
+    ## Installation
+    
+    Please tell us the 3 simple steps for installing your app.
+    
+    - Step 1: ${data.step1}
+    - Step 2: ${data.step2}
+    - Step 3: ${data.step3}
+    
+    ## Usage
+    
+    - ${data.usageDescription}
+    
+    - Screenshots of the App
+    
+      Terminal side:
+      ![Screenshots](assets/images/screenshot.png)
+    
+      VS code side:
+      ![Screenshots](assets/images/screenshot.png)
+    
+      Generated Readme.md:
+      ![Screenshots](assets/images/screenshot.png)
+    
+    ## Credits
+    
+    Collaborators:
+    
+    - Name: ${data.collaboratorName1}; GitHub Repo: ${data.GitHubProfile1}.
+    - Name: ${data.collaboratorName2}; GitHub Repo: ${data.GitHubProfile2}.
+    
+    Third-party assets:
+    
+    - ${data.thirdpartyURLs}
+    
+    Tutorials:
+    
+    - ${data.tutorialURLs}
+    
+    ## License
+    
+    MIT License
+    
+    Copyright (c) ${data.licenseYear} ${data.licenseName}
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+    
+    ---
+    
+    ## 🏆 Miscellaneous
+    
+    ## Badges
+    
+    ![Readme_Generator](https://img.shields.io/badge/Readme.md-Generator%20v1.0-blue)
+    
+    ## Features
+    
+    - ${data.features}
+    
+    ## How to Contribute
+    
+    - ${data.contribution}
+    
+    If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+    
+    ## Demo URL
+    
+    Please feel free to take a look at the demo video of this app:
+    
+    [Demo link](https://#)
     `
 
-    fs.writeFile(filenameHTML, html, (err) => 
-        err ? console.log(err) : console.log("success!"));
-    
-    // fs.writeFile(filenameCSS, css, (err) => 
-    //     err ? console.log(err) : console.log("success!"));
+    fs.writeFile(filenameReadme, readmeGenerate, (err) => 
+        err ? console.log(err) : console.log("Readme file is successfully generated!"));
+
 });

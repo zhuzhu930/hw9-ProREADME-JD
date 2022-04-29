@@ -1,10 +1,10 @@
 # ReadmePro
 
-    Designed by: Jessie Doherty
+Designed by: Jessie Doherty
 
 ## Description
 
-    This app is designed to generate professional readme file for future repositories.
+This app is designed to generate professional readme file for future repositories.
 
 - What was your motivation?
 - Answer: It's hard to remember what to include in a readme file. So I want to make a sample and take users's input to generate a readme file.
@@ -17,7 +17,7 @@
 
 ## Installation
 
-    Please tell us the 3 simple steps for installing your app.
+Please tell us the 3 simple steps for installing your app.
 
 - Step 1: Fork this repo in my GitHub page, run it with code editor and nodejs
 - Step 2: Answer all questions prompted.
@@ -39,14 +39,12 @@ Generated Readme.md:
 
 ## Credits
 
-    Collaborators:
+Collaborators:
 
 - Name: No.; GitHub Repo: N/A.
 - Name: No.; GitHub Repo: N/A.
-  Third-party assets:
-- No. I only used the instruction materials.
-  Tutorials:
-- No.
+- Third-party assets: No. I only used the instruction materials.
+- Tutorials: No.
 
 ## License
 
@@ -90,6 +88,6 @@ Generated Readme.md:
 
 ## Demo URL
 
-    Please feel free to take a look at the demo video of this app:
+Please feel free to take a look at the demo video of this app:
 
 [Demo link](https://drive.google.com/file/d/1PMw6HrfYfTd0uDhtfg4vlzsGgRSwDm-5/view)

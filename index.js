@@ -153,14 +153,14 @@ inquirer.prompt([
     
     - Screenshots of the App
     
-      Terminal side:
-      ![Screenshots](assets/images/screenshot.png)
-    
-      VS code side:
-      ![Screenshots](assets/images/screenshot.png)
-    
-      Generated Readme.md:
-      ![Screenshots](assets/images/screenshot.png)
+    Terminal side:
+    ![Terminal](assets/images/terminalside.png)
+  
+    VS code side:
+    ![VS code](assets/images/queryscreen.png)
+  
+    Generated Readme.md:
+    ![Generated file](assets/images/generatedreadme.png)
     
     ## Credits
     

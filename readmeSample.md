@@ -40,13 +40,13 @@ Please tell us the 3 simple steps for installing your app.
 - Screenshots of the App
 
   Terminal side:
-  ![Screenshots](assets/images/screenshot.png)
+  ![Terminal](assets/images/terminalside.png)
 
   VS code side:
-  ![Screenshots](assets/images/screenshot.png)
+  ![VS code](assets/images/queryscreen.png)
 
   Generated Readme.md:
-  ![Screenshots](assets/images/screenshot.png)
+  ![Generated file](assets/images/generatedreadme.png)
 
 ## Credits
 

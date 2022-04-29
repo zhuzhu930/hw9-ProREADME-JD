@@ -16,6 +16,11 @@ inquirer.prompt([
     },
     {
         type: "input",
+        name: "shortDescription",
+        message: "Can you give us a short description of this app?",
+    },
+    {
+        type: "input",
         name: "motivation",
         message: "What was your motivation to build this app?",
     },

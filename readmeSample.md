@@ -9,18 +9,17 @@ Designed by: ${data.name}
 ## Description
 
 <!--Inquire: Short-description of the app-->
-<Short-description>
 
-<!-- Inquire: questions about the app-->
+${data.shortDescription}
 
 - What was your motivation?
-- Answer: ${motivation}
+- Answer: ${data.motivation}
 - Why did you build this project?
-- Answer: ${purpose}
+- Answer: ${data.purpose}
 - What problem does it solve?
-- Answer: ${problem-solved}
+- Answer: ${data.problem-solved}
 - What did you learn?
-- Answer: ${things-learned}
+- Answer: ${data.things-learned}
 
 ## Installation
 
@@ -28,21 +27,26 @@ Designed by: ${data.name}
 
 Please tell us the 3 simple steps for installing your app.
 
-- Step 1: <${step1}>
-- Step 2: <${step2}>
-- Step 3: <${step3}>
+- Step 1: ${data.step1}
+- Step 2: ${data.step2}
+- Step 3: ${data.step3}
 
 ## Usage
 
 <!-- Inquire: short description on how to use-->
 
-- ${usageDescription}
+- ${data.usageDescription}
 
 - Screenshots of the App
 
-  ```md
-  ![alt text](assets/images/screenshot.png)
-  ```
+  Terminal side:
+  ![Screenshots](assets/images/screenshot.png)
+
+  VS code side:
+  ![Screenshots](assets/images/screenshot.png)
+
+  Generated Readme.md:
+  ![Screenshots](assets/images/screenshot.png)
 
 ## Credits
 
@@ -50,20 +54,20 @@ Collaborators:
 
 <!-- Inquire: collaborators and their GitHub profiles-->
 
-- Name: ${collaboratorName1}; GitHub Repo: ${GitHubProfile1}.
-- Name: ${collaboratorName2}; GitHub Repo: ${GitHubProfile2}.
+- Name: ${data.collaboratorName1}; GitHub Repo: ${data.GitHubProfile1}.
+- Name: ${data.collaboratorName2}; GitHub Repo: ${data.GitHubProfile2}.
 
 <!-- Inquire: third-party assets and their websites-->
 
 Third-party assets:
 
-- ${thirdpartyURLs}
+- ${data.thirdpartyURLs}
 
 <!-- Inquire: tutorials and links-->
 
 Tutorials:
 
-- ${tutorialURLs}
+- ${data.tutorialURLs}
 
 ## License
 
@@ -71,7 +75,7 @@ Tutorials:
 
 MIT License
 
-Copyright (c) ${licenseYear} ${licenseName}
+Copyright (c) ${data.licenseYear} ${data.licenseName}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -103,13 +107,13 @@ SOFTWARE.
 
 <!-- Inquire: features of the app-->
 
-- ${features}
+- ${data.features}
 
 ## How to Contribute
 
 <!-- Inquire: short description on how to contribute-->
 
-- ${contribution}
+- ${data.contribution}
 
 If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 

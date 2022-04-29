@@ -217,8 +217,6 @@ inquirer.prompt([
     
     - ${data.contribution}
     
-    If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-    
     ## Demo URL
     
     Please feel free to take a look at the demo video of this app:
